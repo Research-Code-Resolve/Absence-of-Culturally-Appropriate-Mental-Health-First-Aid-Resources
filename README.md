@@ -6,23 +6,23 @@ The project primarily targets undergraduate university students aged 18–30 yea
 ## What Has Been Tried:
 Several approaches have been implemented to improve student mental health, including:
 
--University counselling services.
--Mental Health First Aid (MHFA) training programs.
--Peer-support initiatives.
--Mental health awareness campaigns.
--Helplines and community-based psychosocial support.
--Digital mental health resources and mobile applications.
+- University counselling services.
+- Mental Health First Aid (MHFA) training programs.
+- Peer-support initiatives.
+- Mental health awareness campaigns.
+- Helplines and community-based psychosocial support.
+- Digital mental health resources and mobile applications.
 
 Despite these efforts, many interventions are based on models developed in high-income countries and often fail to reflect the cultural, linguistic, and socio-economic realities of Kenyan university students. As a result, awareness, accessibility, and utilization of available resources remain low.
 ## Where Technology Could Help:
 Technology provides an opportunity to make Mental Health First Aid more accessible, engaging, and culturally relevant. Potential solutions include:
 
--A mobile application providing culturally adapted MHFA resources.
--AI-powered chatbots offering immediate mental health guidance and referrals.
--Anonymous peer-support platforms to reduce stigma.
--Multilingual resources in English, Kiswahili, and Sheng.
--Digital directories of campus counselling services and emergency contacts.
--Low-bandwidth and offline-accessible mental health resources for students with limited internet access.
--Interactive awareness campaigns and self-help tools designed specifically for university students.
+- A mobile application providing culturally adapted MHFA resources.
+- AI-powered chatbots offering immediate mental health guidance and referrals.
+- Anonymous peer-support platforms to reduce stigma.
+- Multilingual resources in English, Kiswahili, and Sheng.
+- Digital directories of campus counselling services and emergency contacts.
+- Low-bandwidth and offline-accessible mental health resources for students with limited internet access.
+- Interactive awareness campaigns and self-help tools designed specifically for university students.
 
 These technology-driven solutions can complement existing mental health services by improving awareness, increasing accessibility, reducing stigma, and encouraging early help-seeking among students.
