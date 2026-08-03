@@ -50,8 +50,3 @@ Contains project documentation, research notes, designs, reports, and other docu
 
 ### `/mobile`
 Contains mobile application development work.
-## Contribution Guidelines
-
-- Do not commit sensitive information.
-- Never commit `.env` files, API keys, passwords, or secrets.
-- Follow the appropriate folder structure for each track.
