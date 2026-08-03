@@ -36,17 +36,17 @@ This repository contains the work for the WG project. The project is organized i
 
 ## Project Structure
 
-### `/backend`
+### `backend`
 Contains backend development work, including APIs, server-side logic, database integration, authentication, and other backend services.
 
-### `/frontend`
+### `frontend`
 Contains frontend applications, UI components, and client-side development.
 
-### `/data-ml`
+### `data-ml`
 Contains data analysis, machine learning models, experiments, notebooks, and related scripts.
 
-### `/docs`
+### `docs`
 Contains project documentation, research notes, designs, reports, and other documentation materials.
 
-### `/mobile`
+### `mobile`
 Contains mobile application development work.
