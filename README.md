@@ -26,3 +26,32 @@ Technology provides an opportunity to make Mental Health First Aid more accessib
 - Interactive awareness campaigns and self-help tools designed specifically for university students.
 
 These technology-driven solutions can complement existing mental health services by improving awareness, increasing accessibility, reducing stigma, and encouraging early help-seeking among students.
+
+
+# WG Project
+
+## Overview
+
+This repository contains the work for the WG project. The project is organized into different tracks, with each folder representing a specific area of development.
+
+## Project Structure
+
+### `/backend`
+Contains backend development work, including APIs, server-side logic, database integration, authentication, and other backend services.
+
+### `/frontend`
+Contains frontend applications, UI components, and client-side development.
+
+### `/data-ml`
+Contains data analysis, machine learning models, experiments, notebooks, and related scripts.
+
+### `/docs`
+Contains project documentation, research notes, designs, reports, and other documentation materials.
+
+### `/mobile`
+Contains mobile application development work.
+## Contribution Guidelines
+
+- Do not commit sensitive information.
+- Never commit `.env` files, API keys, passwords, or secrets.
+- Follow the appropriate folder structure for each track.
