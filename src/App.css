@@ -1,0 +1,480 @@
+/* ==========================================================================
+   1. GLOBAL RESETS & BASE STYLES
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #1a202c;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* ==========================================================================
+   2. APP CONTAINER & TOP HEADER
+   ========================================================================== */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 90px; /* Space for enlarged bottom navigation bar */
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4f46e5;
+  color: #ffffff;
+  padding: 10px 12px;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  gap: 6px;
+}
+
+.logo-btn {
+  color: #ffffff;
+}
+
+.logo {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.logo span {
+  color: #a5b4fc;
+}
+
+.top-select-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.top-dropdown {
+  background-color: #ffffff;
+  color: #1e293b;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.user-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 16px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   3. SCREEN CONTAINERS & HERO BAND
+   ========================================================================== */
+.screen {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero-band {
+  background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #c7d2fe;
+}
+
+.privacy-banner {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #3730a3;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.hero-band h1 {
+  font-size: 1.5rem;
+  color: #1e1b4b;
+  margin-bottom: 6px;
+}
+
+.hero-band p {
+  font-size: 0.9rem;
+  color: #4338ca;
+}
+
+.screen-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.screen-subtitle {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-top: -12px;
+}
+
+/* ==========================================================================
+   4. QUICK ACTION CARDS (HOME SCREEN)
+   ========================================================================== */
+.quick-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.qa-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 16px;
+  border-radius: 14px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.qa-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.qa-icon {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.qa-label {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #1e293b;
+}
+
+.qa-sub {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+/* ==========================================================================
+   5. LISTS, MODULE CARDS & DIRECTORY CARDS
+   ========================================================================== */
+.module-list,
+.dir-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.module-card,
+.dir-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.dir-card {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.mod-info {
+  flex: 1;
+  padding-right: 12px;
+}
+
+.mod-title,
+.dir-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.mod-desc,
+.dir-desc {
+  font-size: 0.825rem;
+  color: #64748b;
+  margin: 4px 0;
+}
+
+.mod-meta,
+.dir-info-block {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #94a3b8;
+}
+
+.download-btn {
+  background-color: #4f46e5;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.download-btn:disabled {
+  background-color: #cbd5e1;
+  cursor: not-allowed;
+}
+
+.dir-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.dir-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 12px;
+  background-color: #e0e7ff;
+  color: #3730a3;
+}
+
+/* ==========================================================================
+   6. SETTINGS SECTION
+   ========================================================================== */
+.settings-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.setting-group-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.setting-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 14px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.setting-left h4 {
+  font-size: 0.95rem;
+  color: #1e293b;
+}
+
+.setting-left p {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.setting-value {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #4f46e5;
+}
+
+.logout-session-btn {
+  width: 100%;
+  background-color: #fee2e2;
+  color: #dc2626;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   7. ENLARGED & HIGH-CONTRAST BOTTOM NAVIGATION BAR
+   ========================================================================== */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 600px;
+  min-height: 72px;
+  background-color: #ffffff;
+  border-top: 2px solid #cbd5e1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 50;
+  padding: 6px 4px;
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #475569;
+  border-radius: 12px;
+  padding: 8px 4px;
+  flex: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+.nav-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.nav-item.active {
+  color: #4f46e5;
+  background-color: #eef2ff;
+  transform: scale(1.06);
+}
+
+.nav-item:hover {
+  color: #4f46e5;
+}
+
+/* ==========================================================================
+   8. PIN MODAL OVERLAY & KEYPAD
+   ========================================================================== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 16px;
+}
+
+.modal {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.modal h3 {
+  font-size: 1.2rem;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+
+.modal p {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-bottom: 16px;
+}
+
+.pin-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.pin-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #cbd5e1;
+}
+
+.pin-dot.filled {
+  background-color: #4f46e5;
+  border-color: #4f46e5;
+}
+
+.pin-keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.pin-key {
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: #f1f5f9;
+  border-radius: 10px;
+  color: #334155;
+}
+
+.modal-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.modal-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.modal-btn.ghost {
+  background-color: #f1f5f9;
+  color: #64748b;
+}
+
+.modal-btn.primary {
+  background-color: #4f46e5;
+  color: #ffffff;
+}
